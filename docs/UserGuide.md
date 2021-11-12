@@ -24,12 +24,12 @@ below.
 * If you want to dive straight into features, you can check out our [Features](#features) section.
 * For a quick recap of the commands, you can take a look at our [Command Summary](#command-summary) section.
 * If you're looking for something specific, a [Table of Contents](#table-of-contents) with clickable links to each 
-  section is provided. When you're done, you can click on the header of the section that you're viewing to jump back to 
-  the Table of Contents.
+  section is provided. When you're done, you can click on the :arrow_up: icon next to the section header to 
+  jump back to the Table of Contents.
 
 <div markdown="block" class="alert alert-info">
 
-**Here's the meaning of some icons we used in the guide:**<br>
+**Here's the meaning of some other icons we used in the guide:**<br>
 
 :information_source: Extra information about the specific section.
 
@@ -50,7 +50,7 @@ below.
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-## <u>Setting up Dash</u>
+## <u>Setting up Dash</u> [:arrow_up:](#table-of-contents)
 
 On most modern operating systems like Windows or macOS, the steps for installation are the same.
 
@@ -76,9 +76,9 @@ On most modern operating systems like Windows or macOS, the steps for installati
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-## <u>Getting Started</u>
+## <u>Getting Started</u> [:arrow_up:](#table-of-contents)
 
-### <u>Overview</u>
+### <u>Overview</u> [:arrow_up:](#table-of-contents)
 
 Dash supports contact and task management in several ways. 
 
@@ -91,8 +91,7 @@ Once you're done with a task, you can mark it as complete.
 You can view a list of your incomplete tasks sorted by their due date so that you can prioritise the most pressing 
 deadlines.
 
-### <u>Tab System</u>
-
+### <u>Tab System</u> [:arrow_up:](#table-of-contents)
 ![Switching Tabs](images/UG-01.png)
 
 The image above shows the tab system of Dash, which allows it to keep your contacts and tasks separate.
@@ -100,7 +99,7 @@ To view and edit your contact list, you must switch to the contacts tab.
 Similarly, to view and edit your task list, you must switch to the tasks tab.
 Finally, the help tab provides you with a quick summary of Dash's features and how to use them.
 
-### <u>Command Line Interface</u>
+### <u>Command Line Interface</u> [:arrow_up:](#table-of-contents)
 
 Dash uses a Command Line Interface (CLI) to optimize speed. This means that instead of using your mouse to click 
 through menus, you mostly use your keyboard to interact with Dash by typing in **commands**. 
@@ -144,7 +143,7 @@ you a lot of time!
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-## <u>Features</u>
+## <u>Features</u> [:arrow_up:](#table-of-contents)
 
 <div markdown="block" class="alert alert-info">
 
@@ -178,9 +177,9 @@ information.
 
 </div>
 
-### <u>General</u>
+### <u>General</u> [:arrow_up:](#table-of-contents)
 
-#### Switch Tabs: `contacts` or `tasks` or `help`
+#### Switch Tabs: `contacts` or `tasks` or `help` [:arrow_up:](#table-of-contents)
 
 :orange_book: If you want to switch to a certain tab, you can do that by typing out the tab name.
 
@@ -192,7 +191,7 @@ Alternatively, you can switch tabs using shortcuts to save time:
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Exiting the program: `exit`
+#### Exiting the program: `exit` [:arrow_up:](#table-of-contents)
 
 :orange_book: If you want to close the window and exit the program, you can use the _Exit_ command.
 
@@ -208,7 +207,7 @@ be saved.
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-### <u>Contacts</u>
+### <u>Contacts</u> [:arrow_up:](#table-of-contents)
 
 <div markdown="block" class="alert alert-info">
 
@@ -217,7 +216,7 @@ Make sure you switch to the Contacts tab before using these commands! They will 
 
 </div>
 
-#### Adding a contact: `add`
+#### Adding a contact: `add` [:arrow_up:](#table-of-contents)
 
 ![Adding a Contact](images/UG-02.png)
 
@@ -244,7 +243,7 @@ Names must be unique, and should be no longer than 30 characters.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Editing contact details: `edit`
+#### Editing contact details: `edit` [:arrow_up:](#table-of-contents)
 
 ![Editing a Contact](images/UG-04.png)
 
@@ -278,7 +277,7 @@ Names must be unique, and should be no longer than 30 characters.
 </div>
 
 --------------------------------------------------------------------------------------------------------------------
-#### Tagging a contact: `tag`
+#### Tagging a contact: `tag` [:arrow_up:](#table-of-contents)
 
 ![Tagging a Contact](images/UG-12.png)
 
@@ -301,7 +300,7 @@ Tags should be no longer than 15 characters.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Deleting a contact: `delete`
+#### Deleting a contact: `delete` [:arrow_up:](#table-of-contents)
 
 :orange_book: If you want to delete a contact, you can use the _Delete_ command.
 
@@ -315,7 +314,7 @@ Tags should be no longer than 15 characters.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Finding all contacts matching given details: `find`
+#### Finding all contacts matching given details: `find` [:arrow_up:](#table-of-contents)
 
 ![Finding a Contact](images/UG-06.png)
 
@@ -340,7 +339,7 @@ Tags should be no longer than 15 characters.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Listing all contacts: `list`
+#### Listing all contacts: `list` [:arrow_up:](#table-of-contents)
 
 :orange_book: After you’ve filtered your contacts using 
 [the _Find_ command](#finding-all-contacts-matching-given-details-find), if you want to view all of them again, you can 
@@ -350,7 +349,7 @@ use the List command.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Clearing all contacts: `clear`
+#### Clearing all contacts: `clear` [:arrow_up:](#table-of-contents)
 
 :orange_book: If you want to delete all of your contacts, you can use the _Clear_ command.
 
@@ -366,7 +365,7 @@ This command is **irreversible** and your contact list will be **permanently** d
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-### <u>Tasks</u>
+### <u>Tasks</u> [:arrow_up:](#table-of-contents)
 
 <div markdown="block" class="alert alert-info">
 
@@ -382,7 +381,7 @@ of interest and more easily assign them to tasks.
 
 </div>
 
-#### Adding a task: `add`
+#### Adding a task: `add` [:arrow_up:](#table-of-contents)
 
 ![Adding a Task](images/UG-03.png)
 
@@ -410,7 +409,7 @@ task list:
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Editing task details: `edit`
+#### Editing task details: `edit` [:arrow_up:](#table-of-contents)
 
 ![Editing a Task](images/UG-05.png)
 
@@ -443,7 +442,7 @@ task list:
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Tagging a task: `tag`
+#### Tagging a task: `tag` [:arrow_up:](#table-of-contents)
 
 ![Tagging a Task](images/UG-8.png)
 
@@ -467,7 +466,7 @@ Tags should be no longer than 15 characters.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Assigning people to a task: `assign`
+#### Assigning people to a task: `assign` [:arrow_up:](#table-of-contents)
 
 ![Assigning people to a Task](images/UG-9.png)
 
@@ -491,7 +490,7 @@ by 23:59".
   
 --------------------------------------------------------------------------------------------------------------------
 
-#### Completing a task: `complete`
+#### Completing a task: `complete` [:arrow_up:](#table-of-contents)
 
 ![Completing a Task](images/UG-10.png)
 
@@ -511,7 +510,7 @@ An incomplete task has a red tick instead.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Deleting a task: `delete`
+#### Deleting a task: `delete` [:arrow_up:](#table-of-contents)
 
 :orange_book: If you want to delete a task, you can use the _Delete_ command.
 
@@ -525,7 +524,7 @@ An incomplete task has a red tick instead.
   
 --------------------------------------------------------------------------------------------------------------------
 
-#### Finding all tasks matching given details: `find`
+#### Finding all tasks matching given details: `find` [:arrow_up:](#table-of-contents)
 
 ![Finding a Task](images/UG-07.png)
 
@@ -555,7 +554,7 @@ without the prefix `d/`.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Viewing all upcoming tasks: `upcoming`
+#### Viewing all upcoming tasks: `upcoming` [:arrow_up:](#table-of-contents)
 
 ![Viewing upcoming Tasks](images/UG-11.png)
 
@@ -584,7 +583,7 @@ Completed tasks will appear first, so it's convenient to use
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Listing all tasks: `list`
+#### Listing all tasks: `list` [:arrow_up:](#table-of-contents)
 
 :orange_book: After you’ve filtered your tasks using 
 [the _Find_ command](#finding-all-tasks-matching-given-details-find) or 
@@ -595,7 +594,7 @@ use the List command.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Clearing completed tasks: `cleardone`
+#### Clearing completed tasks: `cleardone` [:arrow_up:](#table-of-contents)
 
 :orange_book: If you want to delete all of your completed tasks, you can use the _Cleardone_ command.
 
@@ -603,7 +602,7 @@ use the List command.
 
 --------------------------------------------------------------------------------------------------------------------
 
-#### Clearing all tasks: `clear`
+#### Clearing all tasks: `clear` [:arrow_up:](#table-of-contents)
 
 :orange_book: If you want to delete all of your tasks, you can use the _Clear_ command.
 
@@ -665,9 +664,9 @@ Format | Example
 
 <div style="page-break-after: always;"></div>
 
-## <u>Command summary</u>
+## <u>Command summary</u> [:arrow_up:](#table-of-contents)
 
-### General
+### General [:arrow_up:](#table-of-contents)
 
 Action | Format
 --------|------------------
@@ -676,7 +675,7 @@ Action | Format
 **Help** | `help` or `h`
 **Exit** | `exit`
 
-### Contacts Tab
+### Contacts Tab [:arrow_up:](#table-of-contents)
 
 Action | Format
 --------|------------------
@@ -690,7 +689,7 @@ Action | Format
 
 <div style="page-break-after: always;"></div>
 
-### Tasks Tab
+### Tasks Tab [:arrow_up:](#table-of-contents)
 
 Action | Format
 --------|------------------
