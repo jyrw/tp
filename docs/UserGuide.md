@@ -315,6 +315,8 @@ Names must be unique, and should be no longer than 30 characters.
 
 * At least one tag must be provided.
 
+<div style="page-break-after: always;"></div>
+
 <div markdown="block" class="alert alert-info">
 
 **:information_source: Tag limitations:**<br>
@@ -697,6 +699,8 @@ All commands that accept Date/Time parameters (_Add_, _Edit_, _Find_ commands) e
 If you specify multiple Date/Time parameters, only the last Date/Time parameter will be taken.<br>
 e.g. if you specify `dt/12/02/2021 dt/1900`, only `dt/1900` will be taken.
 
+<div style="page-break-after: always;"></div>
+
 **Date Formats**
 
 Format | Example
@@ -706,8 +710,6 @@ Format | Example
 **yyyy/MM/dd** | `2021/10/02`
 **yyyy-MM-dd** | `2021-10-02`
 **dd MMM yyyy** | `02 Oct 2021` (First letter of Month must be capitalised)
-
-<div style="page-break-after: always;"></div>
 
 **Time Formats**
 
