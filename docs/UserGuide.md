@@ -160,9 +160,7 @@ you a lot of time!
 <div markdown="block" class="alert alert-info">
 
 <a name="command-format-info"></a>
-**:information_source: Notes about the command format:**<br>
-
-Here's how to read the given command formats:
+**:information_source: Here's how to read the given command formats:**<br>
 
 * Words in `UPPER_CASE` denote parameters.<br>
   e.g. If the format is `add n/NAME`, `NAME` is a parameter which should be replaced by the name of the contact you 
@@ -175,8 +173,8 @@ Here's how to read the given command formats:
 * Arguments with `…` after them can be used more than once.<br>
   e.g. If the format is `tag t/TAG...` can be used as `tag t/friend`, `tag t/friend t/colleague`, `tag t/friend t/colleague t/boss` 
   etc.<br>
-  
-**Here's the meaning of some icons used in this section:**
+
+:information_source: **Here's the meaning of some icons used in this section:**
 
 :orange_book: Brief description of what the command does.
 
