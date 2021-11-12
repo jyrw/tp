@@ -4,17 +4,42 @@ title: User Guide
 ---
 ![Banner](images/banner.png)
 
+## <u>Introduction</u>
+
 Dash is a personal planner app which offers unparalleled speed using text-based input. It supports both management of
 tasks and contacts. Dash is tailored to the needs of university students, who must keep track of a slew of different 
 deadlines, commitments, and contacts. So long as you're a fast typist, Dash provides a blisteringly quick way to stay 
 on top of your responsibilities.
 
-This guide was written to help you set up and start using Dash. You can navigate by clicking the table of 
-contents [below](#table-of-contents). If you're a new user, the Quick Start guide has all you need to get started. If 
-you're an intermediate user looking to get more out of Dash, all supported commands are listed below.
+This guide was written to help you set up and start using Dash. If you're a new user, the Quick Start guide has all you 
+need to get started. If you're an intermediate user looking to get more out of Dash, all supported commands are listed 
+below.
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
+## <u>How to use this User Guide</u>
+
+* Go to the [Getting Started](#getting-started) section for an overview of Dash.
+* If you want to dive straight into features, you can check out our [Features](#features) section.
+* For a quick recap of the commands, you can take a look at our [Command Summary](#command-summary) section.
+* If you're looking for something specific, a [Table of Contents](#table-of-contents) with clickable links to each 
+  section is provided. When you're done, you can click on the header of the section that you're viewing to jump back to 
+  the Table of Contents.
+
+<div markdown="block" class="alert alert-info">
+
+**Here's the meaning of some icons we used in the guide:**<br>
+
+:information_source: Extra information about the specific section.
+
+:warning: Important information to help you avoid errors.
+
+:bulb: Tips to help you get the most out of Dash.
+
+</div>
+
+--------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
 ## <u>Table of Contents</u>
@@ -27,14 +52,15 @@ you're an intermediate user looking to get more out of Dash, all supported comma
 
 ## <u>Setting up Dash</u>
 
-Whether you're using Windows or macOS, the steps for installation are the same.
+On most modern operating systems like Windows or macOS, the steps for installation are the same.
 
 1. Ensure you have Java `11` or above installed in your Computer. 
    [Not sure what Java is? Click here!](https://java.com/en/download/help/download_options.html)
 
 2. Download the latest `dash.jar` from [this website](https://github.com/AY2122S1-CS2103T-W15-2/tp/releases/tag/v1.4).
 
-3. Copy the file to the folder you want to use as the _home folder_ for Dash, which is where your data is stored.
+3. Put the `dash.jar` file in the folder you want to use as the _home folder_ for Dash. This is where your data will 
+   be stored.
    -  _We suggest creating a folder called "Dash" and putting the `dash.jar` file inside it. You can place this folder 
       wherever you want. Next, we recommend that you create a shortcut for Dash by right-clicking on the `dash.jar` 
       file. On Windows, click on the `Create Shortcut` option while on macOS, click on `Make Alias`. You can then put 
@@ -50,62 +76,63 @@ Whether you're using Windows or macOS, the steps for installation are the same.
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-## <u>How to use this User Guide</u>
-
-* Go to the [Getting Started](#getting-started) section for an overview of Dash.
-* If you want to dive straight into features, you can check out our [Features](#features) section.
-* For a quick recap of the commands, you can take a look at our [Command Summary](#command-summary) section.
-
-<div markdown="block" class="alert alert-info">
-   
-**Here is the meaning of some icons used in the guide:**<br>
-
-:information_source: Extra information about the specific section.
-
-:warning: Important information to help you avoid errors.
-
-:bulb: Tips to help you get the most out of Dash.
-   
-</div>
-
-
---------------------------------------------------------------------------------------------------------------------
-<div style="page-break-after: always;"></div>
-
 ## <u>Getting Started</u>
 
+### <u>Overview</u>
+
 Dash supports contact and task management in several ways. 
+
 In terms of contact management, Dash allows you to add contacts and fill in details such as their 
 phone number, address, and email. 
 It even allows you to group them using tags such as "Neighbour" or "Colleague", so you can look them up more easily. 
-For task management, Dash allows you to add tasks, tag them, and set deadlines for them. 
-Once you're done with a task, you can mark it as complete.
 
-Dash uses a tab system to keep your contacts and tasks separate. 
-To view and edit your contact list, you must switch to the contacts tab. 
-Similarly, to view and edit your task list, you must switch to the tasks tab. 
-Finally, the help tab provides you with a quick summary of Dash's features and how to use them.
+For task management, Dash allows you to add tasks, tag them, and set deadlines for them. 
+Once you're done with a task, you can mark it as complete. 
+You can view a list of your incomplete tasks sorted by their due date so that you can prioritise the most pressing 
+deadlines.
+
+### <u>Tab System</u>
 
 ![Switching Tabs](images/UG-01.png)
 
-Dash uses a Command Line Interface (CLI) to optimize speed. This means that you use mostly your keyboard to interact 
-with Dash, instead of relying on your mouse to click on options. For example, you can switch tabs by typing in a 
-command; you cannot do so by clicking the tab.
+The image above shows the tab system of Dash, which allows it to keep your contacts and tasks separate.
+To view and edit your contact list, you must switch to the contacts tab.
+Similarly, to view and edit your task list, you must switch to the tasks tab.
+Finally, the help tab provides you with a quick summary of Dash's features and how to use them.
 
-Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open 
-the help window.
+### <u>Command Line Interface</u>
 
-Some example commands you can try:
+Dash uses a Command Line Interface (CLI) to optimize speed. This means that instead of using your mouse to click 
+through menus, you mostly use your keyboard to interact with Dash by typing in **commands**. 
 
-* **`contacts`** : Switches to the contacts tab
+**Commands** are how you tell Dash to do things. The first word you type in is the **command word** which lets Dash 
+know what kind of command you are inputting. Some types of commands require other inputs after the first word: these 
+are known as **arguments**. These arguments are usually made up of a **prefix** and a **parameter**. 
+
+In the example below, the command word is `add`, and the argument `n/Alice Yeoh` is made up of the prefix `n/` and the 
+parameter `Alice Yeoh`. This tells Dash to add a contact with name `Alice Yeoh`.
+
+```aidl
+add n/Alice Yeoh
+```
+
+To execute the command, simply type `add n/Alice Yeoh` in the command box and press enter.
+
+The format of each command must be followed precisely, or the command won't work.
+
+If you're a beginner user, you might get the command format wrong. That's ok! Your input simply won't be recognised by
+Dash, and will remain in the command box. You can then modify your input and press Enter to try to execute the
+command again.
+
+Here are more example commands you can try:
+
+* **`help`** : Switches to the help tab
 
 * **`tasks`** : Switches to the tasks tab
 
-* **`add n/Joe`** : Adds a contact named Joe.
-
-* **`clear`** : Deletes all contacts.
-
 * **`exit`** : Exits the app.
+
+You can find the details of all commands in the [Features section](#features) below.
 
 <div markdown="block" class="alert alert-info">
 
@@ -113,8 +140,6 @@ Some example commands you can try:
 you a lot of time!
 
 </div>
-
-Refer to the [Features](#features) below for details of each command.
 
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
@@ -126,32 +151,21 @@ Refer to the [Features](#features) below for details of each command.
 <a name="command-format-info"></a>
 **:information_source: Notes about the command format:**<br>
 
-* Command words (like `add`, `find`, `help`, etc.) are always lowercase and are case-sensitive.
-  e.g. `Help` will not be understood by Dash, but `help` will. 
+Here's how to read the given command formats:
 
-* Words in `UPPER_CASE` are the parameters to be supplied by the user.<br>
-  e.g. in `add n/NAME`, `NAME` is a parameter which can be used as `add n/John Doe`.
+* Words in `UPPER_CASE` denote parameters.<br>
+  e.g. If the format is `add n/NAME`, `NAME` is a parameter which should be replaced by the name of the contact you 
+  want to add.
 
-* Items in square brackets are optional.<br>
-  e.g. `n/NAME [t/TAG]` can be used as `n/John Doe t/friend` or as `n/John Doe`.
+* Arguments in square brackets are optional.<br>
+  e.g. If the format is `add n/NAME [t/TAG]`, since `TAG` is optional, both `add n/John Doe t/friend` and 
+  `add n/John Doe` are accepted by Dash. However, since `NAME` is not optional, `add t/friend` is not accepted.
 
-* Items with `…` after them can be used more than once.<br>
-  e.g. `p/PERSON_INDEX…` can be used as `p/1`, `p/1 p/3`, `p/4 p/5 p/2` etc.<br>
-  e.g. `[t/TAG]…` can be used as ` ` (i.e. 0 times, because of the square brackets), `t/friend`, `t/friend t/family` 
-  etc.
-
-* Parameters can be in any order.<br>
-  e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
-
-* If a parameter is expected only once in the command, but you specified it multiple times, only the last occurrence of 
-  the parameter will be taken.<br>
-  e.g. if you specify `p/12341234 p/56785678`, only `p/56785678` will be taken.
-
-* Extraneous parameters for commands that do not take in parameters (such as `help`, `contacts`, `tasks` and `clear`) 
-  will be ignored.<br>
-  e.g. if the command specifies `help 123`, it will be interpreted as `help`.
+* Arguments with `…` after them can be used more than once.<br>
+  e.g. If the format is `tag t/TAG...` can be used as `tag t/friend`, `tag t/friend t/colleague`, `tag t/friend t/colleague t/boss` 
+  etc.<br>
   
-Here is the meaning of some icons used in this section:
+**Here's the meaning of some icons used in this section:**
 
 :orange_book: Brief description of what the command does.
 
@@ -242,13 +256,12 @@ Names must be unique, and should be no longer than 30 characters.
 
 :scroll: Notes:
 
-* At least one of the optional fields must be provided.
+* At least one of the optional arguments must be provided.
 * Edits the contact at the specified `INDEX`.
   * The `INDEX` refers to the position of the contact in the displayed contact list as indicated by the number next to 
   their name.
-  * The `INDEX` must be a positive integer (1, 2, 3,...).
-* Existing values will be updated to the input values.
-* When editing tags, the existing tags of the contact will be removed i.e. adding of tags is not cumulative.
+* Existing details will be updated using the supplied parameters.
+* When editing tags, the existing tags of the contact will be removed.
   * To add tags without removing existing tags, refer to the Tag command in the [next section](#tagging-a-contact-tag).
 
 <div markdown="block" class="alert alert-info">
@@ -299,7 +312,6 @@ Tags should be no longer than 15 characters.
 * Deletes the person at the specified `INDEX`.
   * The `INDEX` refers to the position of the contact in the displayed contact list as indicated by the number next to
     their name.
-  * The `INDEX` must be a positive integer (1, 2, 3,...).
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -319,11 +331,6 @@ Tags should be no longer than 15 characters.
 * At least one of the optional fields must be provided.
 * The search is case-insensitive. e.g. `find e/hans@gmail.com` will match `Hans@gmail.com`.
 * The order of the keywords does not matter. e.g. `find a/tampines 111` will match `Blk 111 Tampines Street 11, #02-345`.
-* Contacts matching all keywords will be returned (i.e. AND search). 
-  * e.g. `find n/Hans Bo` will return only `Hans Bo` and `Hans Bo the Second`. It will not return `Hans Gruber` or
-    `Bo Yang`.
-  * e.g. `find p/86235343 t/CS2101` will return only contacts who have both the phone number `86235343` AND the tag 
-    `CS2101`. It will not return contacts with different phone numbers, even if they both have the tag `CS2101`.
 
 <div markdown="block" class="alert alert-info">
 
@@ -399,7 +406,6 @@ task list:
   * You can assign multiple people to the same task at once.
   * The `PERSON_INDEX` refers to the position of the person in the
     [Contacts panel](#tasks-info) as indicated by the number next to their name.
-  * Any specified `PERSON_INDEX` must be a positive integer (1, 2, 3,...).
 * An explanation of how Date and Time formats work can be found [here](#date-time-info).
 
 --------------------------------------------------------------------------------------------------------------------
@@ -420,15 +426,13 @@ task list:
 * Edits the task at the specified `INDEX`.
   * The `INDEX` refers to the position of the task in the displayed task list as indicated by the number next to 
   its description.
-  * The `INDEX` must be a positive integer (1, 2, 3,...).
-* Existing values will be updated to the input values.
-* When editing tags, the existing tags of the contact will be removed i.e. adding of tags is not cumulative.
+* Existing details will be updated using the supplied parameters.
+* When editing tags, the existing tags of the contact will be removed.
   * To add tags without removing existing tags, refer to the Tag command in the [next section](#tagging-a-task-tag).
 * If you want to modify the assignees of the task, new assignees are specified with `PERSON_INDEX`.
   * You can assign multiple people to the same task at once.
   * The `PERSON_INDEX` refers to the position of the person in the [Contacts panel](#contacts-panel-info) as indicated 
     by the number next to their name.
-  * Any specified `PERSON_INDEX` must be a positive integer (1, 2, 3,...).
 * An explanation of how Date and Time formats work can be found [here](#date-time-info).
 
 <div markdown="block" class="alert alert-info">
@@ -483,8 +487,7 @@ by 23:59".
   * The `INDEX` refers to the position of the task in the displayed task list as indicated by the number next to its 
     description.
   * The `PERSON_INDEX` refers to the position of the person in the
-    [Contacts panel](#contacts-panel-info) as indicated by the number next to their name.  
-  * The `INDEX` and `PERSON_INDEX` must be positive integers (1, 2, 3,...).
+    [Contacts panel](#contacts-panel-info) as indicated by the number next to their name.
   
 --------------------------------------------------------------------------------------------------------------------
 
@@ -504,7 +507,6 @@ An incomplete task has a red tick instead.
 * Completes the task at the specified `INDEX`.
   * The `INDEX` refers to the position of the task in the displayed task list as indicated by the number next to its 
     description.
-  * The `INDEX` must be a positive integer (1, 2, 3,...).
 * You cannot 'un-complete' a task. 
 
 --------------------------------------------------------------------------------------------------------------------
@@ -520,7 +522,6 @@ An incomplete task has a red tick instead.
 * Deletes the task at the specified `INDEX`.
   * The `INDEX` refers to the position of the task in the displayed task list as indicated by the number next to 
     its description.
-  * The `INDEX` must be a positive integer (1, 2, 3,...).
   
 --------------------------------------------------------------------------------------------------------------------
 
@@ -541,11 +542,7 @@ you can use the _Find_ command.
 * At least one of the optional fields must be provided.
 * The search is case-insensitive. e.g `find t/HOMEWORK` will match the `homework` tag.
 * The order of the keywords does not matter. e.g. `find d/lectures ST` will match `ST Lectures`.
-* `COMPLETION_STATUS` must be either `true` (for completed tasks) or `false` (for incomplete tasks). 
-* Tasks matching all keywords will be returned (i.e. AND search). 
-  * e.g. `find d/Math Quiz` will return only `Math Quiz` and `Math Quiz 8`. 
-    It will not return `Math Assignment` or `GEQ Quiz`.
-  * e.g. `find dt/1900 t/homework` will return only tasks which have both the time `1900` AND the tag `homework`.
+* `COMPLETION_STATUS` must be either `true` (for completed tasks) or `false` (for incomplete tasks).
   It will not return tasks with different times, even if they both have the tag `homework`.
 * An explanation of how Date and Time formats work can be found [here](#date-time-info).
 
@@ -679,7 +676,7 @@ Action | Format
 **Help** | `help` or `h`
 **Exit** | `exit`
 
-### Contact Tab
+### Contacts Tab
 
 Action | Format
 --------|------------------
