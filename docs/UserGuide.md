@@ -94,6 +94,8 @@ deadlines.
 
 [[Back to Table of Contents]](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 ### <u>Tab System</u>
 
 ![Switching Tabs](images/UG-01.png)
@@ -104,6 +106,8 @@ Similarly, to view and edit your task list, you must switch to the tasks tab.
 Finally, the help tab provides you with a quick summary of Dash's features and how to use them.
 
 [[Back to Table of Contents]](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 ### <u>Command Line Interface</u>
 
@@ -185,6 +189,8 @@ information.
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 ### <u>General</u>
 
 #### Switch Tabs: `contacts` or `tasks` or `help`
@@ -245,6 +251,8 @@ your contact list:
 * Tag(s): _friend_
 
 :page_with_curl: Format: `add n/NAME [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]...`
+
+<div style="page-break-after: always;"></div>
 
 <div markdown="block" class="alert alert-info">
 
@@ -738,8 +746,6 @@ Action | Format
 **Clear** | `clear`
 
 <div style="page-break-after: always;"></div>
-
-[[Back to Table of Contents]](#table-of-contents)
 
 ### Tasks Tab
 
